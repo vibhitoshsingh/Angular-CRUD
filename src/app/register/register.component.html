@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <div style="text-align:center" class="login" style="margin: 0 auto;width:500px">
+   <h2 style="text-align:center">
+     
+      Register From Here</h2>
+   <form (ngSubmit)="Register()" #RegForm="ngForm">
+   <div class="form-group">
+    <input type="text" class="form-control" name="Email" id="Email" placeholder="Email" [(ngModel)]="email" #Email="ngModel" required>
+  </div>
+  <div class="form-group">
+    <input type="Password" class="form-control" name="password" id="password" placeholder="Password" [(ngModel)]="password" #Password="ngModel" required>
+  </div>
+   <div style="text-align:center">
+     <button type="submit" class="btn btn-outline-info" [disabled]="!RegForm.form.valid" routerLink="/login" >Register</button>
+
+  </div>
+     </form>
+  </div>
+
+  
+  
+  

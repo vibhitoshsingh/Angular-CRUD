@@ -1,0 +1,11 @@
+.register {
+    margin-top: 150px;
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid deepskyblue; /* red */
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}

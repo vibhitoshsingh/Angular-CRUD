@@ -1,0 +1,24 @@
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">-->
+<h3>Registration</h3>
+
+<form  [formGroup]="userForm" (ngSubmit)="onSubmit()" novalidate>
+   
+   <div class="form-group">
+
+</div>
+  <div class="form-group">
+      <label class="center-block">
+        <input class="form-control" formControlName="name" placeholder="Your Name">
+      </label>
+  </div>
+  <div class="form-group">
+      <label class="center-block">
+        <input class="form-control" formControlName="job" placeholder="Your Job">
+      </label>
+  </div>
+
+  <div>
+          <!--<button type="submit" class="btn btn-success">Save</button>-->
+           <button type="submit" class="btn btn-outline-info" routerLink="/home">Save</button>
+        </div>
+</form>
